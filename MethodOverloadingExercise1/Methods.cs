@@ -26,7 +26,7 @@ namespace MethodOverloadingExercise1
                 return ($"{num1 + num2} dollars");
             }
 
-            else if (mybool == true && (num1 + num2 == 1))
+            else if (mybool == true && ((num1 + num2 == 1) || (num1 + num2 == -1)))
             {
                   return ($"{num1 + num2} dollar");
             }
