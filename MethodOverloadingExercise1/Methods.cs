@@ -21,24 +21,25 @@ namespace MethodOverloadingExercise1
 
         public static string Add(int num1, int num2, bool mybool)
         {
-            if (mybool == true && (num1 + num2 > 1))
+            int sum = num1 + num2;
+            if (mybool && (num1 + num2 > 1))
             {
-                return ($"{num1 + num2} dollars");
+                return $"{sum} dollars";
             }
 
-            else if (mybool == true && ((num1 + num2 == 1) || (num1 + num2 == -1)))
+            else if (mybool && ((num1 + num2 == 1) || (num1 + num2 == -1)))
             {
                   return ($"{num1 + num2} dollar");
             }
 
-            else if (mybool == true && (num1 +num2 <1))
+            else if (mybool && (num1 + num2 <1))
             {
                 return ($"{num1 + num2} dollars");
             }
 
             else
             {
-                return ("Numbers entered are not valid");
+                return $"{num1 + num2}";
             }
         }
     }
